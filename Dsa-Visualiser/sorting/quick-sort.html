@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick Sort Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Quick Sort Visualizer</h2>
+  <div id="controls">
+    <button onclick="startSort()">Start Sorting</button>
+    <button onclick="resetArray()">Reset</button>
+    <a href="/Users/jayvardhannegi/Documents/project/Dsa-Visualiser/index.html" class="algo-button">Back to Home</a>
+  </div>
+  <div id="bars-container"></div>
+
+  <div class="description">
+    <h3>How Quick Sort Works:</h3>
+    <p>
+      Quick Sort picks a pivot and partitions the array into two parts:
+      elements less than the pivot and elements greater.
+      It recursively sorts each part.
+    </p>
+  </div>
+
+  <script src="quick-sort.js"></script>
+</body>
+</html>

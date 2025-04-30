@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>0/1 Knapsack Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>0/1 Knapsack Visualizer</h2>
+
+  <div id="controls">
+    <label>Weights (comma-separated):</label><br>
+    <input id="weights" value="2,3,4,5" /><br><br>
+
+    <label>Values (comma-separated):</label><br>
+    <input id="values" value="3,4,5,6" /><br><br>
+
+    <label>Knapsack Capacity:</label><br>
+    <input id="capacity" type="number" value="8" /><br><br>
+
+    <button onclick="runKnapsack()">Solve</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="knapsack.js"></script>
+</body>
+</html>

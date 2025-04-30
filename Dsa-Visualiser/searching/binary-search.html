@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Binary Search Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Binary Search Visualizer</h2>
+  <div id="controls">
+    <label for="target-select">Choose a number:</label>
+    <select id="target-select"></select>
+    <button onclick="startSearch()">Start Search</button>
+    <button onclick="resetArray()">Reset</button>
+    <a href="/Users/jayvardhannegi/Documents/project/Dsa-Visualiser/index.html" class="algo-button">Back to Home</a>
+  </div>
+  <div id="bars-container"></div>
+
+  <div class="description">
+    <h3>How Binary Search Works:</h3>
+    <p>
+      Binary Search repeatedly divides a sorted array into halves and compares the target with the middle element.
+      It's very efficient, but only works on sorted arrays.
+    </p>
+  </div>
+
+  <script src="binary-search.js"></script>
+</body>
+</html>

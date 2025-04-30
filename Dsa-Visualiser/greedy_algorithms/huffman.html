@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Huffman Coding Tree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Huffman Coding</h2>
+  <textarea id="inputText" rows="6" cols="40">A:5\nB:9\nC:12\nD:13\nE:16\nF:45</textarea><br>
+  <button onclick="buildHuffman()">Build Huffman Tree</button>
+  <div id="output">
+    <div id="codes"></div>
+    <svg id="svgTree" width="100%" height="600"></svg>
+  </div>
+  <script src="huffman.js"></script>
+</body>
+</html>

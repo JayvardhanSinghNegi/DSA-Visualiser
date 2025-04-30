@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+textarea {
+  margin-top: 10px;
+}
+#timeline, #jobTimeline {
+  position: relative;
+  height: 50px;
+  margin-top: 20px;
+}
+.activity {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  background: lightgreen;
+  border: 1px solid green;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.tree-node {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #eef;
+  font-weight: bold;
+  text-align: center;
+}
+.tree-children {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#svgTree {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  background-color: white;
+}

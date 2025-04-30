@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Sequencing with Deadlines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Job Sequencing</h2>
+  <p>Enter jobs (id, deadline, profit) per line:</p>
+  <textarea id="jobInput" rows="6" cols="50">a,2,100
+b,1,19
+c,2,27
+d,1,25
+e,3,15</textarea><br>
+  <button onclick="runJobSequencing()">Schedule Jobs</button>
+  <div id="jobTimeline"></div>
+  <script src="job.js"></script>
+</body>
+</html>
