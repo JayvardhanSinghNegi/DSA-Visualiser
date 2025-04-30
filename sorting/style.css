@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px 20px 20px;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #00ffe7;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+/* Buttons - clean version */
+button, .algo-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 14px;
+  background-color: #121212;
+  color: #00ffe7;
+  border: 2px solid #00ffe7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, .algo-button:hover {
+  background-color: #00ffe7;
+  color: #0f0f0f;
+  transform: scale(1.05);
+}
+
+/* Bars */
+#bars-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.bar {
+  width: 10px;
+  margin: 0 2px;
+  background-color: #00ffe7;
+  transition: height 0.2s ease, background-color 0.3s ease;
+  border-radius: 3px 3px 0 0;
+}
+
+/* Description Box */
+.description {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 15px 20px;
+  background-color: #1a1a1a;
+  border-left: 4px solid #00ffe7;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 255, 231, 0.2);
+}
+
+/* Optional: Special style for "Back to Home" button */
+.algo-button#home {
+  background-color: #00ffe7;
+  color: #0f0f0f;
+  border: none;
+}
+
+.algo-button#home:hover {
+  background-color: #00e0c6;
+  transform: scale(1.05);
+}

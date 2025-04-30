@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2 {
+  color: #00ffe7;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #a0faff;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 15px;
+  background-color: #121212;
+  color: #00ffe7;
+  border: 2px solid #00ffe7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00ffe7;
+  color: #0f0f0f;
+  transform: scale(1.05);
+}
+
+/* Textarea */
+textarea {
+  margin-top: 15px;
+  width: 80%;
+  min-height: 120px;
+  background-color: #1f1f1f;
+  color: #00ffe7;
+  border: 1px solid #00ffe7;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+/* Timeline Containers */
+#timeline,
+#jobTimeline {
+  position: relative;
+  height: 60px;
+  margin: 30px auto 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #00ffe7;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  overflow-x: auto;
+  gap: 12px;
+  max-width: 90vw;
+}
+
+/* Activity / Job Blocks */
+.activity {
+  flex: 0 0 auto;
+  min-width: 80px;
+  max-width: 150px;
+  padding: 0 10px;
+  background-color: #d297ff;
+  color: #0f0f0f;
+  border: 1px solid #b678e2;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(210, 151, 255, 0.4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Placeholder for empty slots */
+.activity.empty {
+  background-color: transparent;
+  border: 1px dashed #444;
+  color: #888;
+}
+
+/* Tree Nodes (for greedy decision trees) */
+.tree-node {
+  display: inline-block;
+  margin: 12px;
+  padding: 10px 18px;
+  border: 2px solid #00ffe7;
+  border-radius: 10px;
+  background-color: #121212;
+  font-weight: bold;
+  font-size: 16px;
+  color: #00ffe7;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tree-node:hover {
+  transform: scale(1.05);
+  background-color: #00ffe7;
+  color: #0f0f0f;
+}
+
+/* Children row in tree */
+.tree-children {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* SVG Tree Visual */
+#svgTree {
+  display: block;
+  margin: 30px auto;
+  border: 2px solid #00ffe7;
+  background-color: #1f1f1f;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 255, 231, 0.15);
+}

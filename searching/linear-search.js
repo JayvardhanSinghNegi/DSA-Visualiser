@@ -1,7 +1,7 @@
 let array = [];
 
 function generateArray() {
-  array = Array.from({ length: 30 }, () => Math.floor(Math.random() * 100)).sort((a, b) => a - b);
+  array = Array.from({ length: 30 }, () => Math.floor(Math.random() * 100));
   renderArray();
   populateDropdown();
 }
@@ -14,7 +14,7 @@ function renderArray(highlight = -1) {
     bar.className = "bar";
     bar.style.height = `${value * 3}px`;
     bar.title = value;
-    if (i === highlight) bar.style.backgroundColor = "orange";
+    if (i === highlight) bar.style.backgroundColor =" #d297ff";
     container.appendChild(bar);
   });
 }
@@ -32,17 +32,10 @@ function populateDropdown() {
 
 async function startSearch() {
   const target = parseInt(document.getElementById("target-select").value);
-  let left = 0;
-  let right = array.length - 1;
-
-  while (left <= right) {
-    let mid = Math.floor((left + right) / 2);
-    renderArray(mid);
-    await new Promise((res) => setTimeout(res, 300));
-
-    if (array[mid] === target) break;
-    else if (array[mid] < target) left = mid + 1;
-    else right = mid - 1;
+  for (let i = 0; i < array.length; i++) {
+    renderArray(i);
+    await new Promise((res) => setTimeout(res, 200));
+    if (array[i] === target) break;
   }
 }
 
